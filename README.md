@@ -32,7 +32,7 @@ pnpm build
 
 For a deployed site, set `VITE_SITE_URL` to its public origin, such as the final HTTPS domain. Until it is set, canonical links and absolute JSON-LD URLs are omitted, and `/sitemap.xml` returns 404. The GitHub repository address is `https://github.com/liaoyio/oooyi-ui`; a public site domain has not yet been chosen.
 
-The registry build, TypeScript check, production build, local browser route checks, and an isolated consumer install from local registry JSON passed in the migration workspace.
+The registry build, TypeScript check, production build, and local browser route checks passed. All registry items were installed from local generated JSON in an isolated consumer project. The public GitHub shorthand was also verified with `fluid-orb` in a fresh TanStack Start project; its TypeScript, client build, and SSR build passed.
 
 ## Contributing
 
