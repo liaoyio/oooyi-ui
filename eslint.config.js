@@ -1,9 +1,31 @@
 import antfu from '@antfu/eslint-config'
 
 export default antfu({
-  formatters: true,
+  formatters: false,
+  stylistic: false,
   react: true,
   rules: {
     'react-refresh/only-export-components': 'off',
+    'perfectionist/sort-imports': 'off',
+    'perfectionist/sort-named-imports': 'off',
+    'import/consistent-type-specifier-style': 'off',
+    'antfu/top-level-function': 'off',
+    'antfu/if-newline': 'off',
+    'ts/consistent-type-definitions': 'off',
+    'prefer-arrow-callback': 'off',
+    'prefer-template': 'off',
+    'prefer-exponentiation-operator': 'off',
+    'unicorn/prefer-number-properties': 'off',
+    'unicorn/no-new-array': 'off',
+    'ts/no-use-before-define': 'off',
+    'regexp/prefer-d': 'off',
+    'regexp/use-ignore-case': 'off',
+    'regexp/no-useless-non-capturing-group': 'off',
+    'e18e/prefer-timer-args': 'off',
+    'node/prefer-global/process': 'off',
+    'eslint-comments/no-unlimited-disable': 'off',
+    'jsonc/sort-keys': 'off',
+    'pnpm/json-prefer-workspace-settings': 'off',
+    'pnpm/yaml-enforce-settings': 'off',
   },
 })
