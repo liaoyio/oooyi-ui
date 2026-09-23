@@ -1,6 +1,6 @@
 # Contributing to ooOYi UI
 
-ooOYi UI is a TanStack Start site and a [shadcn registry](https://ui.shadcn.com/docs/registry/github). Each registered component can be installed as source with the shadcn CLI after this repository is published.
+ooOYi UI is a TanStack Start site and a [shadcn registry](https://ui.shadcn.com/docs/registry/github). Each registered component can be installed as source with the shadcn CLI.
 
 ## Local setup
 
@@ -24,19 +24,18 @@ The registry entry's description should match its entry in `src/lib/components.t
 ## Validate
 
 ```bash
-pnpm registry:build
 pnpm typecheck
 pnpm lint
 pnpm build
 ```
 
-The registry build validates paths and writes `public/r/*.json`. Check a representative payload and install it in a separate consumer project before publishing. Once the GitHub repository is public, the shadcn CLI address is:
+`pnpm build` validates `registry.json` and builds the site. Check a representative component by installing it in a separate consumer project before publishing. The shadcn CLI address is:
 
 ```bash
 npx shadcn@latest add liaoyio/oooyi-ui/<component-name>
 ```
 
-The GitHub repository serves the source registry. Publishing the repository or deploying the site is a separate maintainer action.
+The GitHub repository serves the source registry directly from `registry.json` and the component files. Push both after a change; there is no generated registry directory to commit. Deploying the site is a separate maintainer action.
 
 ## License
 

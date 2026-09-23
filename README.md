@@ -12,7 +12,7 @@ Run the shadcn CLI in a project with `components.json`:
 npx shadcn@latest add liaoyio/oooyi-ui/fluid-orb
 ```
 
-Replace `fluid-orb` with another name from [registry.json](registry.json). The CLI installs component source, its declared dependencies, and the original license notice as `oooyi-ui-LICENSE.txt`. This is a source registry, not an `npm install oooyi-ui` package.
+Replace `fluid-orb` with another name from [registry.json](registry.json). The CLI reads `registry.json` and the component source directly from GitHub, then installs the source, its declared dependencies, and the original license notice as `oooyi-ui-LICENSE.txt`. No generated `public/r` files are needed. This is a source registry, not an `npm install oooyi-ui` package.
 
 ## Run locally
 
@@ -23,16 +23,17 @@ pnpm dev
 
 The site runs at `http://localhost:3000`. Component source lives in `src/components/ui`; route pages live in `src/routes`.
 
-After changing a component or `registry.json`, regenerate the hosted registry payloads:
+To validate the registry and build the site:
 
 ```bash
-pnpm registry:build
 pnpm build
 ```
 
+Component changes are available to the GitHub install command after the source and `registry.json` are pushed. There is no registry generation step.
+
 For a deployed site, set `VITE_SITE_URL` to its public origin, such as the final HTTPS domain. Until it is set, canonical links and absolute JSON-LD URLs are omitted, and `/sitemap.xml` returns 404. The GitHub repository address is `https://github.com/liaoyio/oooyi-ui`; a public site domain has not yet been chosen.
 
-The registry build, TypeScript check, production build, and local browser route checks passed. All registry items were installed from local generated JSON in an isolated consumer project. The public GitHub shorthand was also verified with `fluid-orb` in a fresh TanStack Start project; its TypeScript, client build, and SSR build passed.
+The registry validation, TypeScript check, production build, and local browser route checks passed. The public GitHub shorthand was verified with `fluid-orb` in a fresh TanStack Start project; its TypeScript, client build, and SSR build passed.
 
 ## Contributing
 

@@ -8,8 +8,8 @@
   "scripts": {
     "dev": "vite dev --port 3000",
     "generate-routes": "tsr generate",
-    "build": "pnpm run registry:build && vite build",
-    "registry:build": "shadcn build",
+    "build": "pnpm run registry:validate && vite build",
+    "registry:validate": "shadcn registry validate",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview",
     "deploy": "pnpm run build && wrangler deploy",
