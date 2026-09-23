@@ -12,7 +12,9 @@ Run the shadcn CLI in a project with `components.json`:
 npx shadcn@latest add liaoyio/oooyi-ui/fluid-orb
 ```
 
-Replace `fluid-orb` with another name from [registry.json](registry.json). The CLI reads `registry.json` and the component source directly from GitHub, then installs the source, its declared dependencies, and the original license notice as `oooyi-ui-LICENSE.txt`. No generated `public/r` files are needed. This is a source registry, not an `npm install oooyi-ui` package.
+Replace `fluid-orb` with another name from [registry.json](registry.json). The CLI reads `registry.json` and the component source directly from GitHub, then installs the source, its declared dependencies, and the original license notice as `oooyi-ui-LICENSE.txt`. This is a source registry, not an `npm install oooyi-ui` package.
+
+The site also serves a static HTTP registry at `/r/<component-name>.json` and `/r/registry.json`, as Rare UI did. `shadcn build` generates these files from the same source registry into `public/r/`. GitHub shorthand installs do not use those files; URL-based installs do.
 
 ## Run locally
 
@@ -21,7 +23,7 @@ pnpm install
 pnpm dev
 ```
 
-The site runs at `http://localhost:3000`. Component source lives in `src/components/ui`; route pages live in `src/routes`.
+The site runs at `http://localhost:3000`. `pnpm dev` generates `public/r/` before starting the server. Component source lives in `src/components/ui`; route pages live in `src/routes`.
 
 To validate the registry and build the site:
 
@@ -29,7 +31,7 @@ To validate the registry and build the site:
 pnpm build
 ```
 
-Component changes are available to the GitHub install command after the source and `registry.json` are pushed. There is no registry generation step.
+`pnpm build` regenerates `public/r/` before building the site, so deployed HTTP registry files reflect the current source. The generated directory is ignored by Git; commit the source and `registry.json`, then deploy with the build script. GitHub installs read those committed source files directly. If a local component changes while `pnpm dev` is already running, restart the server to refresh the local `/r/*.json` output.
 
 For a deployed site, set `VITE_SITE_URL` to its public origin, such as the final HTTPS domain. Until it is set, canonical links and absolute JSON-LD URLs are omitted, and `/sitemap.xml` returns 404. The GitHub repository address is `https://github.com/liaoyio/oooyi-ui`; a public site domain has not yet been chosen.
 

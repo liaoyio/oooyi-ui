@@ -29,13 +29,13 @@ pnpm lint
 pnpm build
 ```
 
-`pnpm build` validates `registry.json` and builds the site. Check a representative component by installing it in a separate consumer project before publishing. The shadcn CLI address is:
+`pnpm build` validates `registry.json`, regenerates the hosted HTTP registry in `public/r/`, and builds the site. Check a representative component by installing it in a separate consumer project before publishing. The shadcn CLI address is:
 
 ```bash
 npx shadcn@latest add liaoyio/oooyi-ui/<component-name>
 ```
 
-The GitHub repository serves the source registry directly from `registry.json` and the component files. Push both after a change; there is no generated registry directory to commit. Deploying the site is a separate maintainer action.
+The GitHub repository serves the source registry directly from `registry.json` and the component files. Push both after a change. `public/r/` is generated automatically at dev startup and during a production build; it is ignored by Git. A deployment built with `pnpm build` also serves URL-based installs from `/r/<component-name>.json`.
 
 ## License
 

@@ -25,6 +25,6 @@ Each section has one job. Never repeat a fact across sections.
 
 ## Workflow
 
-- After changing anything in `src/components/ui/*` or `registry.json`, run `pnpm build` to validate the registry and the site. GitHub installs read these source files directly. The registry description must match the one in `src/lib/components.ts`.
+- After changing anything in `src/components/ui/*` or `registry.json`, run `pnpm build` to validate the registry, generate `public/r/` for HTTP installs, and build the site. GitHub installs read the source files directly. The registry description must match the one in `src/lib/components.ts`.
 - Verify with `pnpm typecheck` and `pnpm exec eslint` on the touched files before calling work done.
 - Check affected pages in a local browser after route or shared UI changes. Verify that document navigation returns HTML and that interactive components work after hydration.

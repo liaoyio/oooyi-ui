@@ -6,9 +6,10 @@
     "#/*": "./src/*"
   },
   "scripts": {
-    "dev": "vite dev --port 3000",
+    "dev": "pnpm run registry:build && vite dev --port 3000",
     "generate-routes": "tsr generate",
-    "build": "pnpm run registry:validate && vite build",
+    "build": "pnpm run registry:build && vite build",
+    "registry:build": "shadcn build",
     "registry:validate": "shadcn registry validate",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview",
