@@ -1,11 +1,11 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
-import GooeyNavbar from "@/components/GooeyNavbar";
+import GooeyNavbar from "@/components/gooey-navbar";
 import { fetchStarCount } from "@/lib/github";
-import HeroCta from "@/components/HeroCta";
-import HeroIntro from "@/components/HeroIntro";
-import ComponentsShowcase from "@/components/ComponentsShowcase";
-import TestimonialsSection from "@/components/testimonials/TestimonialsSection";
-import Footer from "@/components/Footer";
+import HeroCta from "@/components/hero-cta";
+import HeroIntro from "@/components/hero-intro";
+import ComponentsShowcase from "@/components/components-showcase";
+import TestimonialsSection from "@/components/testimonials/testimonials-section";
+import Footer from "@/components/footer";
 import { pageHead } from "@/lib/seo";
 import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/site";
 

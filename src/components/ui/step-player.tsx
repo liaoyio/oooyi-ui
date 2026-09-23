@@ -4,7 +4,7 @@ import { combine, separate, type Interpolator } from 'flubber'
 import { animate, motion, useMotionValue, useReducedMotion, useTransform } from 'motion/react'
 import { useCallback, useEffect, useMemo, useRef, useState, type ComponentProps } from 'react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/lib/cn'
 
 /*
  * Copyright (c) 2026 Swami Malode.

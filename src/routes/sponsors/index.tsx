@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import Footer from "@/components/Footer";
-import GooeyNavbar from "@/components/GooeyNavbar";
-import HeroIntro from "@/components/HeroIntro";
-import SponsorStats from "@/components/sponsors/SponsorStats";
-import TierPricing from "@/components/sponsors/TierPricing";
+import Footer from "@/components/footer";
+import GooeyNavbar from "@/components/gooey-navbar";
+import HeroIntro from "@/components/hero-intro";
+import SponsorStats from "@/components/sponsors/sponsor-stats";
+import TierPricing from "@/components/sponsors/tier-pricing";
 import { fetchPageviews } from "@/lib/databuddy";
 import { fetchStarCount } from "@/lib/github";
 import { SITE_KEYWORDS, pageHead } from "@/lib/seo";

@@ -6,7 +6,7 @@ import { Slot } from "@radix-ui/react-slot";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { X } from "lucide-react";
 import { Emoji, EmojiProvider, type EmojiData } from "react-apple-emojis";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/cn";
 
 /*
  * Copyright (c) 2026 Swami Malode.

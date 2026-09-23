@@ -5,7 +5,7 @@ import { Drawer } from "vaul";
 import useMeasure from "react-use-measure";
 import { motion, AnimatePresence, useReducedMotion } from "motion/react";
 import clsx from "clsx";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/cn";
 
 /*
  * Copyright (c) 2026 Swami Malode.

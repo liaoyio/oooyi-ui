@@ -1,6 +1,6 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
-import Footer from "@/components/Footer";
-import GooeyNavbar from "@/components/GooeyNavbar";
+import Footer from "@/components/footer";
+import GooeyNavbar from "@/components/gooey-navbar";
 import { fetchStarCount } from "@/lib/github";
 import { pageHead } from "@/lib/seo";
 import { SITE_NAME } from "@/lib/site";

@@ -1,6 +1,6 @@
-import Footer from '@/components/Footer'
-import GooeyNavbar from '@/components/GooeyNavbar'
-import NotFoundHero from '@/components/not-found/NotFoundHero'
+import Footer from '@/components/footer'
+import GooeyNavbar from '@/components/gooey-navbar'
+import NotFoundHero from '@/components/not-found/not-found-hero'
 
 export default function NotFound() {
   return (

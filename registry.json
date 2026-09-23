@@ -4,18 +4,40 @@
   "homepage": "https://github.com/liaoyio/oooyi-ui",
   "items": [
     {
-      "name": "utils",
+      "name": "cn",
       "type": "registry:lib",
-      "title": "Utils",
+      "title": "cn",
       "description": "The cn helper for merging Tailwind classes.",
       "dependencies": [
-        "clsx",
-        "tailwind-merge"
+        "cn"
       ],
       "files": [
         {
-          "path": "src/lib/utils.ts",
-          "type": "registry:lib"
+          "path": "src/lib/cn.ts",
+          "type": "registry:lib",
+          "target": "@lib/cn.ts"
+        },
+        {
+          "path": "LICENSE",
+          "type": "registry:file",
+          "target": "~/oooyi-ui-LICENSE.txt"
+        }
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "Legacy cn alias",
+      "description": "Compatibility alias for the cn helper; installs lib/cn.ts.",
+      "dependencies": [
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "src/lib/cn.ts",
+          "type": "registry:lib",
+          "target": "@lib/cn.ts"
         },
         {
           "path": "LICENSE",
@@ -34,7 +56,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -52,7 +74,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -70,7 +92,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -91,7 +113,7 @@
         "clsx"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -109,7 +131,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -131,7 +153,7 @@
         "@radix-ui/react-slot"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -149,7 +171,7 @@
       "title": "Fluid Orb",
       "description": "An animated WebGL orb with drifting fluid shading, inspired by ChatGPT's voice mode.",
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -167,7 +189,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -187,7 +209,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -205,7 +227,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -220,7 +242,7 @@
       "title": "Gravity Letters",
       "description": "A playful gravity field where letters, numbers, emoji, or any components you pass fall and pile up like real objects.",
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -238,7 +260,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -259,7 +281,7 @@
         "@radix-ui/react-slot"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -278,7 +300,7 @@
         "@radix-ui/react-slot"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -297,7 +319,7 @@
         "flubber"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -318,7 +340,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -336,7 +358,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -354,7 +376,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -372,7 +394,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -387,7 +409,7 @@
       "title": "Matrix Orb",
       "description": "A dot-matrix orb that animates through idle, listening and thinking states.",
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {
@@ -405,7 +427,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "liaoyio/oooyi-ui/utils"
+        "liaoyio/oooyi-ui/cn"
       ],
       "files": [
         {

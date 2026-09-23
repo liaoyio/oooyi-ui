@@ -1,5 +1,5 @@
 import { createElement, type ReactNode } from "react";
-import { MotionIcon } from "@/components/Description/icons";
+import { MotionIcon } from "@/components/description/icons";
 
 export type Dependency = {
   name: string;
@@ -80,7 +80,7 @@ export const PANEL_INFO = {
 export const components: ComponentItem[] = [
   {
     name: "Folder component",
-    href: "/components/foldercomponent",
+    href: "/components/folder-component",
     category: "display",
     registry: "folder-component",
     description:
@@ -128,7 +128,7 @@ export function Demo() {
   },
   {
     name: "Bounce sidebar",
-    href: "/components/bouncesidebar",
+    href: "/components/bounce-sidebar",
     category: "navigation",
     registry: "bounce-sidebar",
     description:
@@ -195,7 +195,7 @@ export function Demo() {
   },
   {
     name: "Hook Sidebar",
-    href: "/components/hooksidebar",
+    href: "/components/hook-sidebar",
     category: "navigation",
     registry: "hook-sidebar",
     description:
@@ -284,7 +284,7 @@ export function Demo() {
   },
   {
     name: "Proximity Sidebar",
-    href: "/components/proximitysidebar",
+    href: "/components/proximity-sidebar",
     category: "navigation",
     registry: "proximity-sidebar",
     description:
@@ -352,7 +352,7 @@ export function Demo() {
   },
   {
     name: "Duration Picker",
-    href: "/components/durationpicker",
+    href: "/components/duration-picker",
     category: "inputs",
     registry: "duration-picker",
     description:
@@ -473,7 +473,7 @@ export function Demo() {
   },
   {
     name: "Fluid Orb",
-    href: "/components/fluidorb",
+    href: "/components/fluid-orb",
     category: "ai",
     registry: "fluid-orb",
     description:
@@ -521,7 +521,7 @@ export function Demo() {
   },
   {
     name: "Scroll Progress",
-    href: "/components/scrollprogressindicator",
+    href: "/components/scroll-progress",
     category: "navigation",
     registry: "scroll-progress",
     description:
@@ -594,7 +594,7 @@ export function Demo() {
   },
   {
     name: "Code Block",
-    href: "/components/codeblock",
+    href: "/components/code-block",
     category: "display",
     registry: "code-block",
     description:
@@ -706,7 +706,7 @@ export function Demo() {
   },
   {
     name: "Gravity Letters",
-    href: "/components/gravityletters",
+    href: "/components/gravity-letters",
     category: "display",
     registry: "gravity-letters",
     description:
@@ -803,7 +803,7 @@ export function Demo() {
   },
   {
     name: "OTP Input",
-    href: "/components/otpinput",
+    href: "/components/otp-input",
     category: "inputs",
     registry: "otp-input",
     description:
@@ -921,7 +921,7 @@ export function Demo() {
   },
   {
     name: "GitHub activity",
-    href: "/components/githubactivity",
+    href: "/components/github-activity",
     category: "display",
     registry: "github-activity",
     description:
@@ -1029,7 +1029,7 @@ export function Demo() {
   },
   {
     name: "Emoji reaction",
-    href: "/components/emojireaction",
+    href: "/components/emoji-reaction",
     category: "feedback",
     registry: "emoji-reaction",
     description:
@@ -1108,7 +1108,7 @@ export function Demo() {
   },
   {
     name: "Notification bell",
-    href: "/components/notificationbell",
+    href: "/components/notification-bell",
     category: "feedback",
     registry: "notification-bell",
     description: "An iOS-style notification bell with an unread count badge.",
@@ -1196,7 +1196,7 @@ export function Demo() {
   },
   {
     name: "Step player",
-    href: "/components/stepplayer",
+    href: "/components/step-player",
     category: "display",
     registry: "step-player",
     description:
@@ -1329,7 +1329,7 @@ export function Demo() {
   },
   // {
   //   name: "Family drawer",
-  //   href: "/components/familydrawer",
+  //   href: "/components/family-drawer",
   //   registry: "family drawer",
   //   description:
   //     "A bottom drawer with smooth, morphing transitions between stacked views, inspired by the Family app. Built on Vaul.",
@@ -1344,7 +1344,7 @@ export function Demo() {
   // },
   {
     name: "Grid Reveal",
-    href: "/components/gridreveal",
+    href: "/components/grid-reveal",
     category: "ai",
     isNew: false,
     registry: "grid-reveal",
@@ -1444,7 +1444,7 @@ export function Demo() {
   },
   {
     name: "Gooey nav",
-    href: "/components/gooeynav",
+    href: "/components/gooey-nav",
     category: "navigation",
     isNew: false,
     registry: "gooey-nav",
@@ -1552,7 +1552,7 @@ export function Demo() {
   },
   {
     name: "Delete button",
-    href: "/components/deletebutton",
+    href: "/components/delete-button",
     category: "inputs",
     registry: "delete-button",
     description:
@@ -1595,7 +1595,7 @@ export function Demo() {
   },
   {
     name: "Animated counter",
-    href: "/components/animatedcounter",
+    href: "/components/animated-counter",
     category: "display",
     isNew: true,
     registry: "animated-counter",
@@ -1695,7 +1695,7 @@ export function Revenue({ total }: { total: number }) {
   },
   {
     name: "Matrix orb",
-    href: "/components/matrixorb",
+    href: "/components/matrix-orb",
     category: "ai",
     isNew: true,
     registry: "matrix-orb",
@@ -1771,7 +1771,7 @@ export function Demo() {
   },
   {
     name: "Task list",
-    href: "/components/tasklist",
+    href: "/components/task-list",
     category: "inputs",
     isNew: true,
     registry: "task-list",

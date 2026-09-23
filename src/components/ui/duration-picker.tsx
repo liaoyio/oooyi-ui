@@ -7,7 +7,7 @@ import { motion, useMotionValue, useReducedMotion, useSpring, useTransform, useV
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import useMeasure from 'react-use-measure'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/lib/cn'
 
 /*
  * Copyright (c) 2026 Swami Malode.

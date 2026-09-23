@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import Footer from "@/components/Footer";
-import GooeyNavbar from "@/components/GooeyNavbar";
-import HeroIntro from "@/components/HeroIntro";
-import TestimonialWall from "@/components/testimonials/TestimonialWall";
+import Footer from "@/components/footer";
+import GooeyNavbar from "@/components/gooey-navbar";
+import HeroIntro from "@/components/hero-intro";
+import TestimonialWall from "@/components/testimonials/testimonial-wall";
 import { fetchStarCount } from "@/lib/github";
 import { SITE_KEYWORDS, pageHead } from "@/lib/seo";
 import { SITE_NAME } from "@/lib/site";

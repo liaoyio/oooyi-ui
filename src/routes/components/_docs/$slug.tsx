@@ -1,9 +1,37 @@
-import { createFileRoute, notFound, useLocation } from "@tanstack/react-router";
+import { createFileRoute, notFound, redirect, useLocation } from "@tanstack/react-router";
 import { components } from "@/lib/components";
 import { pageHead } from "@/lib/seo";
 
+const legacySlugs: Record<string, string> = {
+  animatedcounter: "animated-counter",
+  bouncesidebar: "bounce-sidebar",
+  codeblock: "code-block",
+  deletebutton: "delete-button",
+  durationpicker: "duration-picker",
+  emojireaction: "emoji-reaction",
+  familydrawer: "family-drawer",
+  fluidorb: "fluid-orb",
+  foldercomponent: "folder-component",
+  githubactivity: "github-activity",
+  gooeynav: "gooey-nav",
+  gravityletters: "gravity-letters",
+  gridreveal: "grid-reveal",
+  hooksidebar: "hook-sidebar",
+  matrixorb: "matrix-orb",
+  notificationbell: "notification-bell",
+  otpinput: "otp-input",
+  proximitysidebar: "proximity-sidebar",
+  scrollprogressindicator: "scroll-progress",
+  stepplayer: "step-player",
+  tasklist: "task-list",
+};
+
 export const Route = createFileRoute("/components/_docs/$slug")({
-  loader: () => {
+  loader: ({ params }) => {
+    const slug = legacySlugs[params.slug];
+    if (slug) {
+      throw redirect({ href: `/components/${slug}`, statusCode: 301 });
+    }
     throw notFound();
   },
   head: () => pageHead({ title: "Component not found", robots: "noindex" }),

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import Footer from "@/components/Footer";
-import GooeyNavbar from "@/components/GooeyNavbar";
-import LegalPage from "@/components/legal/LegalPage";
+import Footer from "@/components/footer";
+import GooeyNavbar from "@/components/gooey-navbar";
+import LegalPage from "@/components/legal/legal-page";
 import { fetchStarCount } from "@/lib/github";
 import { LEGAL_UPDATED, TERMS_SECTIONS } from "@/lib/legal";
 import { SITE_NAME } from "@/lib/site";

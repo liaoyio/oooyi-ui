@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import Footer from "@/components/Footer";
-import ComponentCard from "@/components/gallery/ComponentCard";
-import GooeyNavbar from "@/components/GooeyNavbar";
+import Footer from "@/components/footer";
+import ComponentCard from "@/components/gallery/component-card";
+import GooeyNavbar from "@/components/gooey-navbar";
 import { components, gallerySections } from "@/lib/components";
 import { fetchStarCount } from "@/lib/github";
 import { SITE_KEYWORDS, componentsJsonLd, pageHead } from "@/lib/seo";

@@ -15,7 +15,7 @@ import {
   type AnimationPlaybackControls,
   type MotionValue,
 } from "motion/react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/cn";
 
 /*
  * Copyright (c) 2026 Swami Malode.

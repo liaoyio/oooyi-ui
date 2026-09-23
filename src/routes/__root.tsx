@@ -1,10 +1,10 @@
 import type { QueryClient } from '@tanstack/react-query'
-import { createRootRouteWithContext, HeadContent, Scripts } from '@tanstack/react-router'
-import { ThemeProvider } from '@/components/theme-provider'
+import { createRootRouteWithContext, HeadContent, ScriptOnce, Scripts } from '@tanstack/react-router'
 import NotFound from '@/components/fallback/not-found'
 import TanStackDevtools from '@/components/tanstack/devtools'
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE } from '@/lib/site'
 import { SITE_KEYWORDS, siteJsonLd } from '@/lib/seo'
+import { themeInitScript } from '@/lib/theme'
 import appCss from '@/styles/tailwind.css?url'
 
 interface MyRouterContext {
@@ -38,15 +38,14 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" style={{ colorScheme: 'dark' }} suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
       <body className="flex min-h-full flex-col">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          <div className="flex flex-1 flex-col">{children}</div>
-          <TanStackDevtools />
-        </ThemeProvider>
+        <ScriptOnce>{themeInitScript}</ScriptOnce>
+        <div className="flex flex-1 flex-col">{children}</div>
+        <TanStackDevtools />
         <Scripts />
       </body>
     </html>

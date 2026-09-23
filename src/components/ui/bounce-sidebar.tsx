@@ -3,7 +3,7 @@
 import { useEffect, useLayoutEffect, useRef, useState, type ComponentProps } from "react";
 import { motion, useAnimate, useReducedMotion } from "motion/react";
 import { arc } from "motion";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/cn";
 
 /*
  * Copyright (c) 2026 Swami Malode.

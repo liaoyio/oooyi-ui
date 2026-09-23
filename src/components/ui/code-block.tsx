@@ -5,7 +5,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import { Highlight, type PrismTheme } from 'prism-react-renderer'
 import React, { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/lib/cn'
 
 /*
  * Copyright (c) 2026 Swami Malode.

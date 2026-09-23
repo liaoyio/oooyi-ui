@@ -3,7 +3,7 @@
 import { useState } from "react";
 import type { ComponentProps, CSSProperties } from "react";
 import { motion, useReducedMotion, type Transition } from "motion/react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/cn";
 
 /*
  * Copyright (c) 2026 Swami Malode.

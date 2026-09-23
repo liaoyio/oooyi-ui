@@ -1,5 +1,5 @@
 import { Outlet, createFileRoute } from "@tanstack/react-router";
-import SidebarShell from "@/components/Sidebar/SidebarShell";
+import SidebarShell from "@/components/sidebar/sidebar-shell";
 
 export const Route = createFileRoute("/components/_docs")({
   component: ComponentsLayout,
